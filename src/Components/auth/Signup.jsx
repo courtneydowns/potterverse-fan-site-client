@@ -84,18 +84,19 @@ class Signup extends Component {
           }}
         >
           <Form onSubmit={this.handleSubmit}>
-            <p
-              className="registerHere"
-              onClick={this.props.toggle}
-              style={{
-                color: "#7400B8",
-                fontWeight: "bold",
-                marginTop: "30px",
-                fontFamily: "Lumos",
-              }}
-            >
-              Join the Potterverse community today!
-            </p>
+            <strong>
+              <p
+                style={{
+                  color: "#7400B8",
+                  fontFamily: "Lumos",
+                  fontSize: "20px",
+                  textAlign: "center",
+                  marginBottom: "5%",
+                }}
+              >
+                Join the Potterverse community today!
+              </p>
+            </strong>
             <FormGroup>
               <SignupPicUpload
                 updatePhoto={this.updatePhoto}
@@ -169,7 +170,7 @@ class Signup extends Component {
               </Button>
             </div>
             <div>
-              <Label
+              <p
                 style={{
                   color: "#7400B8",
                   fontFamily: "Lumos",
@@ -180,7 +181,7 @@ class Signup extends Component {
                 onClick={this.props.toggle}
               >
                 Already have an account? Sign in here!
-              </Label>
+              </p>
             </div>
           </Form>
           {this.state.sessionToken && (
