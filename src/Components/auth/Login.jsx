@@ -111,17 +111,17 @@ class Login extends React.Component {
               </Button>
             </div>
             <div className="register-signup-text">
-              <label
+              <Label
                 for="registerHere"
                 onClick={this.props.toggle}
-                style={{
-                  color: "#7400B8 !important",
-                  fontWeight: "bold",
-                  marginTop: "30px",
-                }}
+                // style={{
+                //   color: "#7400B8 !important",
+                //   fontWeight: "bold",
+                //   marginTop: "30px",
+                // }}
               >
                 Don't have an account? Join the Potterverse community!
-              </label>
+              </Label>
             </div>
           </Form>
         </div>
