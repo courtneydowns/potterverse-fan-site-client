@@ -111,7 +111,7 @@ class Login extends React.Component {
               </Button>
             </div>
             <div className="register-signup-text">
-              <Label
+              <label
                 for="registerHere"
                 onClick={this.props.toggle}
                 style={{
@@ -121,7 +121,7 @@ class Login extends React.Component {
                 }}
               >
                 Don't have an account? Join the Potterverse community!
-              </Label>
+              </label>
             </div>
           </Form>
         </div>
