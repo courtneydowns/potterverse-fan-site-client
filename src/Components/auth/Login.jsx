@@ -48,7 +48,6 @@ class Login extends React.Component {
             marginTop: "55px",
             position: "absolute",
             marginRight: "502px",
-            // zIndex: "1",
             transform: "rotate(-45deg)",
           }}
         />
@@ -115,9 +114,10 @@ class Login extends React.Component {
                 for="registerHere"
                 onClick={this.props.toggle}
                 style={{
-                  color: "black",
+                  color: "#7400B8",
                   fontWeight: "bold",
                   marginTop: "30px",
+                  fontFamily: "Lumos",
                 }}
               >
                 Don't have an account? Join the Potterverse community!
