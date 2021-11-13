@@ -5,8 +5,8 @@ switch (window.location.hostname) {
   case "127.0.0.1":
     APIURL = "http://localhost:3000";
     break;
-  case "cd-potterverse.herokuapp.com":
-    APIURL = "https://cd-potterverse-server.herokuapp.com";
+  case "potterverse-fan-site-server.herokuapp.com":
+    APIURL = "https://potterverse-fan-site-server.herokuapp.com";
 }
 
 export default APIURL;
