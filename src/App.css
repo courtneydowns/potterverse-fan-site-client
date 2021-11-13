@@ -110,13 +110,12 @@ body {
 }
 
 .stars {
-  background: #000 url("../../client/src/assets/stars.png") repeat top center;
+  background: #000 url("../src/assets/stars.png") repeat top center;
   z-index: 0;
 }
 
 .twinkling {
-  background: transparent url("../../client/src/assets/twinkling.png") repeat
-    top center;
+  background: transparent url("../src/assets/twinkling.png") repeat top center;
   z-index: 1;
 
   -moz-animation: move-twink-back 200s linear infinite;
