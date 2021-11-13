@@ -84,19 +84,18 @@ class Signup extends Component {
           }}
         >
           <Form onSubmit={this.handleSubmit}>
-            <strong>
-              <p
-                style={{
-                  color: "#7400B8",
-                  fontFamily: "Lumos",
-                  fontSize: "20px",
-                  textAlign: "center",
-                  marginBottom: "5%",
-                }}
-              >
-                Join the Potterverse community today!
-              </p>
-            </strong>
+            <p
+              className="registerHere"
+              onClick={this.props.toggle}
+              style={{
+                color: "#7400B8",
+                fontWeight: "bold",
+                marginTop: "30px",
+                fontFamily: "Lumos",
+              }}
+            >
+              Join the Potterverse community today!
+            </p>
             <FormGroup>
               <SignupPicUpload
                 updatePhoto={this.updatePhoto}
