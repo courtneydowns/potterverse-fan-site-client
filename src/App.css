@@ -287,10 +287,10 @@ h5 {
   transition: color 0.25s ease;
 } */
 
-/* h2:hover {
-  color: #0433ff !important;
+h2:hover {
+  color: #b537f2 !important;
   transition: color 0.25s ease;
-} */
+}
 
 h4:hover {
   color: #b537f2 !important;
