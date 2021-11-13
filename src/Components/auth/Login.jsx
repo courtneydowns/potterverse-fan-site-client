@@ -115,7 +115,7 @@ class Login extends React.Component {
                 for="registerHere"
                 onClick={this.props.toggle}
                 style={{
-                  color: "#7400B8",
+                  color: "#7400B8 !important",
                   fontWeight: "bold",
                   marginTop: "30px",
                 }}
