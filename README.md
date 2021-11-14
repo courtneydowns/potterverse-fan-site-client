@@ -2,7 +2,7 @@
 
 <br/>
 
-![readme_photo] <img src="../Client/src/assets/PotterverseLogoResized.png alt="signup width="400" />
+![readme_photo] (https://i.postimg.cc/8zb5Dqmz/Potterverse-Logo-Resized.png)
 
 ## Overview
 
@@ -23,26 +23,31 @@ Some of the features on the client-side of this project:
 
 #### Sign up and Login
 
-<img src="../Client/src/assets/SignupScreen.png alt="signup" width="400" />
+<!-- (https://i.postimg.cc/3R8xd99F/Signup-Screen.png) -->
 
-<img src="../Client/src/assets/LoginScreen.png alt="login" />
+[![Signup-Screen.png](https://i.postimg.cc/3R8xd99F/Signup-Screen.png)](https://postimg.cc/PL7j7WgC)
+
+<!-- (https://i.postimg.cc/gJ1cNdmN/Login-Screen.png) -->
+
+[![Login-Screen.png](https://i.postimg.cc/gJ1cNdmN/Login-Screen.png)](https://postimg.cc/phYtLw9F)
 
 #### Create
 
-<img src="../Client/src/assets/CreateComment.png alt="create-comment />
+(https://i.postimg.cc/FHhrPTX5/Create-Comment.png)
 
 #### Update
 
-<img src="../Client/src/assets/UpdateComment.png" alt="update-comment" width="400" />
-<img src="../Client/src/assets/UpdateProfile.png" alt="update-profile" width="400" />
+(https://i.postimg.cc/fy4ZYKfP/Update-Comment.png)
+<br/>
+(https://i.postimg.cc/SNhksgs2/Update-Profile.png)
 
 #### Delete
 
-<img src="../Client/src/assets/DeleteProfile.png" alt="delete-profile" width=400 />
+[![Delete-Profile.png](https://i.postimg.cc/Zq2hhc2q/Delete-Profile.png)](https://postimg.cc/hJLYL9SF)
 
 #### Read
 
-<img src="../Client/src/assets/GetCardResults.png" alt="read" width=400 />
+[![Get-Card-Results.png](https://i.postimg.cc/gjPFx0YF/Get-Card-Results.png)](https://postimg.cc/PpKFcTp2)
 
 ## Code Example
 
