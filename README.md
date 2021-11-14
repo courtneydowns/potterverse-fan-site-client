@@ -19,27 +19,26 @@ Some of the features on the client-side of this project:
 
 #### Sign up and Login
 
-<img src="../client/src/assets/SignupScreen.png> alt="signup" width="400"
-/>
+<img scr="../Client/src/assets/SignupScreen.png alt="signup" width="400" />
 
-<img src="../client/src/assets/LoginScreen.png> alt="login" width="400" />
+<img src="../Client/src/assets/LoginScreen.png alt="login" width="400" />
 
 #### Create
 
-<img src="../client/src/assets/CreateComment.png" alt="create-comment" width="400" />
+<img src="../Client/src/assets/CreateComment.png" alt="create-comment" width="400" />
 
 #### Update
 
-<img src="../client/src/assets/UpdateComment.png" alt="update-comment" width="400" />
-<img src="../client/src/assets/UpdateProfile.png" alt="update-profile" width="400" />
+<img src="../Client/src/assets/UpdateComment.png" alt="update-comment" width="400" />
+<img src="../Client/src/assets/UpdateProfile.png" alt="update-profile" width="400" />
 
 #### Delete
 
-<img src="../client/src/assets/DeleteProfile.png" alt="delete-profile" width=400 />
+<img src="../Client/src/assets/DeleteProfile.png" alt="delete-profile" width=400 />
 
 #### Read
 
-<img src="../client/src/assets/GetCardResults.png" alt="read" width=400 />
+<img src="../Client/src/assets/GetCardResults.png" alt="read" width=400 />
 
 ## Code Example
 
@@ -80,5 +79,3 @@ The following Tech/Frameworks were covered:
 
 - Create a repository
 - Deploy it to Github
-# Client-Potterverse
-# potterverse-fan-site-client
