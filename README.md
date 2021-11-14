@@ -1,10 +1,14 @@
-# Potterverse
+# Welcome to Potterverse Potterverse
+
+<br/>
+
+![readme_photo] <img src="../Client/src/assets/PotterverseLogoResized.png alt="signup width="400" />
 
 ## Overview
 
-Welcome to Potterverse!<br>
+Welcome to Potterverse!<br/>
 
-The purpose of this project is to provide an interactive site for Harry Potter fans.<br>
+The purpose of this project is to provide an interactive site for Harry Potter fans.<br/>
 
 Potterverse gives fans the ability to search categories (Characters, Magical Objects, Potion Ingredients, Potions, Spells, Wand Cores and Wand Woods). The can leave comments on each entry, as well as update and delete them. Users can sign up or login to gain access to the site and will NOT be able to see any of the content of the site unless they are logged in or signed up.
 
@@ -19,13 +23,13 @@ Some of the features on the client-side of this project:
 
 #### Sign up and Login
 
-<img scr="../Client/src/assets/SignupScreen.png alt="signup" width="400" />
+<img src="../Client/src/assets/SignupScreen.png alt="signup" width="400" />
 
-<img src="../Client/src/assets/LoginScreen.png alt="login" width="400" />
+<img src="../Client/src/assets/LoginScreen.png alt="login" />
 
 #### Create
 
-<img src="../Client/src/assets/CreateComment.png" alt="create-comment" width="400" />
+<img src="../Client/src/assets/CreateComment.png alt="create-comment />
 
 #### Update
 
@@ -69,13 +73,20 @@ The following Tech/Frameworks were covered:
 - React componentDidMount()
 - Sending data in a React application
 
+#### Server
+
+- Full CRUD (Create, Read, Update, Delete) on comments and profile components
+
 #### Reactstrap/React-Bootstrap
 
 - Installing Reactstrap, Bootstrap and React-Bootstrap from NOM
 - Importing components from a library
 - Calling it inside the return
 
-#### Github
+#### Server Side Repository
 
-- Create a repository
-- Deploy it to Github
+The server portion of my app can be house [here] (https://github.com/courtneydowns/potterverse-fan-site-server)
+
+#### Heroku Site
+
+[here] (https://potterverse-fan-site.herokuapp.com/)
