@@ -2,7 +2,7 @@
 
 <br/>
 
-![readme_photo] (https://i.postimg.cc/8zb5Dqmz/Potterverse-Logo-Resized.png)
+[![Potterverse-Logo-Resized.png](https://i.postimg.cc/vBr2Stdk/Potterverse-Logo-Resized.png)](https://postimg.cc/njL1X7rG)
 
 ## Overview
 
@@ -23,23 +23,17 @@ Some of the features on the client-side of this project:
 
 #### Sign up and Login
 
-<!-- (https://i.postimg.cc/3R8xd99F/Signup-Screen.png) -->
-
 [![Signup-Screen.png](https://i.postimg.cc/3R8xd99F/Signup-Screen.png)](https://postimg.cc/PL7j7WgC)
-
-<!-- (https://i.postimg.cc/gJ1cNdmN/Login-Screen.png) -->
 
 [![Login-Screen.png](https://i.postimg.cc/gJ1cNdmN/Login-Screen.png)](https://postimg.cc/phYtLw9F)
 
 #### Create
 
-(https://i.postimg.cc/FHhrPTX5/Create-Comment.png)
+[![Create-Comment.png](https://i.postimg.cc/FHhrPTX5/Create-Comment.png)](https://postimg.cc/cr5GCMJX)
 
 #### Update
 
-(https://i.postimg.cc/fy4ZYKfP/Update-Comment.png)
-<br/>
-(https://i.postimg.cc/SNhksgs2/Update-Profile.png)
+[![Update-Profile.png](https://i.postimg.cc/SNhksgs2/Update-Profile.png)](https://postimg.cc/3WnPfC2Y)
 
 #### Delete
 
