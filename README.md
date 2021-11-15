@@ -12,6 +12,10 @@ The purpose of this project is to provide an interactive site for Harry Potter f
 
 Potterverse gives fans the ability to search categories (Characters, Magical Objects, Potion Ingredients, Potions, Spells, Wand Cores and Wand Woods). The can leave comments on each entry, as well as update and delete them. Users can sign up or login to gain access to the site and will NOT be able to see any of the content of the site unless they are logged in or signed up.
 
+## Deployed Project<br/>
+
+The final version of Potterverse which is deployed to heroku can be found [here](https://potterverse-fan-site.herokuapp.com/)
+
 ## Installation
 
 Install these dependencies to get the same features:
@@ -84,8 +88,4 @@ The following Tech/Frameworks were covered:
 
 #### Server Side Repository
 
-The server portion of my app can be house [here] (https://github.com/courtneydowns/potterverse-fan-site-server)
-
-#### Heroku Site
-
-[here] (https://potterverse-fan-site.herokuapp.com/)
+The server portion of my app can be house [here](https://github.com/courtneydowns/potterverse-fan-site-server)
