@@ -14,7 +14,7 @@ Potterverse gives fans the ability to search categories (Characters, Magical Obj
 
 ## Deployed Project<br/>
 
-The final version of Potterverse which is deployed to heroku can be found [here](https://potterverse-fan-site.herokuapp.com/)
+The final version of Potterverse, which is deployed to Heroku, can be found [here](https://potterverse-fan-site.herokuapp.com/)
 
 ## Installation
 
