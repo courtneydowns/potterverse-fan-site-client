@@ -126,7 +126,6 @@ class ViewProfile extends Component {
             profileData={this.state.profileData}
           />
         </div>
-        {/* <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -143,7 +142,8 @@ class ViewProfile extends Component {
         <br></br>
         <br></br>
         <br></br>
-        <br></br> */}
+        <br></br>
+        <br></br>
       </div>
     );
   }
