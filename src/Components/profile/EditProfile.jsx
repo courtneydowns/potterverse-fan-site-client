@@ -21,11 +21,12 @@ class EditProfile extends Component {
       house: this.props.profileData.house,
       favoriteHarryPotterBook: this.props.profileData.favoriteHarryPotterBook,
       favoriteHarryPotterMovie: this.props.profileData.favoriteHarryPotterMovie,
-      favoriteHarryPotterCharacter:
-        this.props.profileData.favoriteHarryPotterCharacter,
+      favoriteHarryPotterCharacter:this.props.profileData.favoriteHarryPotterCharacter,
       modal: false,
     };
-
+    
+    console.log(this.props);
+    console.log(this.props.profileData);
     this.toggle = this.toggle.bind(this);
   }
 
@@ -207,6 +208,7 @@ class EditProfile extends Component {
                   color: "#575C66",
                   border: "#7400B8 solid 2px",
                 }}
+                value={this.state.favoriteHarryPotterCharacter}
                 onChange={(e) =>
                   this.setState({
                     favoriteHarryPotterCharacter: e.target.value,
