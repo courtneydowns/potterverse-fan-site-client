@@ -243,11 +243,6 @@ h3:hover {
   transition: background-color 0.25s ease;
 }
 
-/* .close-icon:hover {
-  color: #b537f2 !important;
-  transition: background-color 0.25s ease;
-} */
-
 .comment-display:hover {
   color: #b537f2 !important;
   transition: background-color 0.25s ease;
@@ -287,10 +282,10 @@ h5 {
   transition: color 0.25s ease;
 } */
 
-h2:hover {
+/* h2:hover {
   color: #b537f2 !important;
   transition: color 0.25s ease;
-}
+} */
 
 h4:hover {
   color: #b537f2 !important;
