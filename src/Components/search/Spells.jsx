@@ -77,7 +77,6 @@ class Spells extends Component {
     fetch(`${APIURL}/spells/`)
       .then((res) => res.json())
       .then((jsonData) => {
-        console.log(jsonData);
         this.setState({ spellData: jsonData });
       });
   };
@@ -91,7 +90,6 @@ class Spells extends Component {
     fetch(`${APIURL}/spells/${this.state.searchTerm}`)
       .then((resp) => resp.json())
       .then((jsonData) => {
-        console.log(jsonData);
         if (jsonData) {
           this.setState({
             searchResults: [jsonData],
@@ -99,6 +97,9 @@ class Spells extends Component {
             comments: jsonData.comments,
           });
         }
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -121,6 +122,9 @@ class Spells extends Component {
       .then((json) => {
         this.toggleCreate();
         this.setState({ comment: "" });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
     this.makeItWork();
   };
@@ -318,13 +322,6 @@ class Spells extends Component {
                                         localStorage.getItem("userId") ? (
                                         <AiOutlineClose
                                           className="close-icon"
-                                          // style={{
-                                          //   color: "#7400B8",
-                                          //   fontWeight: "bold",
-                                          //   fontSize: "10px",
-                                          //   marginLeft: "10px",
-                                          //   textAlign: "center",
-                                          // }}
                                           onClick={() =>
                                             this.commentDelete(comment.id)
                                           }
@@ -548,13 +545,6 @@ class Spells extends Component {
                                           localStorage.getItem("userId") ? (
                                             <AiOutlineClose
                                               className="close-icon"
-                                              // style={{
-                                              //   color: "#7400B8",
-                                              //   fontWeight: "bold",
-                                              //   fontSize: "13px",
-                                              //   marginLeft: "15px",
-                                              //   textAlign: "center",
-                                              // }}
                                               onClick={() =>
                                                 this.commentDelete(comment.id)
                                               }

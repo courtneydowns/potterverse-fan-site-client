@@ -74,17 +74,6 @@ class CreateProfile extends Component {
         className="create-profile-modal"
       >
         <ModalHeader toggle={this.toggle}>
-          {/* <img
-            src={SortingHat}
-            style={{
-              height: "80px",
-              marginBottom: "500px",
-              marginTop: "-53px",
-              position: "absolute",
-              marginLeft: "-68px",
-              transform: "rotate(-45deg)",
-            }}
-          /> */}
           <h1
             style={{
               fontFamily: "HarryP",
@@ -156,7 +145,6 @@ class CreateProfile extends Component {
               onChange={(e) =>
                 this.setState({ favoriteHarryPotterBook: e.target.value })
               }
-              required
             >
               <option value="" disabled defaultValue>
                 Select your Favorite Book
@@ -186,7 +174,6 @@ class CreateProfile extends Component {
               onChange={(e) =>
                 this.setState({ favoriteHarryPotterMovie: e.target.value })
               }
-              required
             >
               <option value="" disabled defaultValue>
                 Select your Favorite Movie
@@ -206,6 +193,7 @@ class CreateProfile extends Component {
               placeholder="Favorite Harry Potter Character"
               type="text"
               name="label"
+              required
               style={{
                 fontFamily: "Lumos",
                 fontSize: "18px",
@@ -216,7 +204,6 @@ class CreateProfile extends Component {
               onChange={(e) =>
                 this.setState({ favoriteHarryPotterCharacter: e.target.value })
               }
-              required
             />
           </FormGroup>
           <Button

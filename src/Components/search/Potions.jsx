@@ -77,8 +77,10 @@ class Potions extends Component {
     fetch(`${APIURL}/potions/`)
       .then((res) => res.json())
       .then((jsonData) => {
-        console.log(jsonData);
         this.setState({ potionData: jsonData });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -99,6 +101,9 @@ class Potions extends Component {
             comments: jsonData.comments,
           });
         }
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -121,6 +126,9 @@ class Potions extends Component {
       .then((json) => {
         this.toggleCreate();
         this.setState({ comment: "" });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
     this.makeItWork();
   };
@@ -312,13 +320,6 @@ class Potions extends Component {
                                         localStorage.getItem("userId") ? (
                                         <AiOutlineClose
                                           className="close-icon"
-                                          // style={{
-                                          //   color: "#7400B8",
-                                          //   fontWeight: "bold",
-                                          //   fontSize: "10px",
-                                          //   marginLeft: "10px",
-                                          //   textAlign: "center",
-                                          // }}
                                           onClick={() =>
                                             this.commentDelete(comment.id)
                                           }
@@ -532,15 +533,6 @@ class Potions extends Component {
                                             localStorage.getItem("userId") ? (
                                             <AiOutlineClose
                                               className="close-icon"
-                                              style={
-                                                {
-                                                  // color: "#7400B8",
-                                                  // fontWeight: "bold",
-                                                  // fontSize: "10px",
-                                                  // marginLeft: "10px",
-                                                  // textAlign: "center",
-                                                }
-                                              }
                                               onClick={() =>
                                                 this.commentDelete(comment.id)
                                               }

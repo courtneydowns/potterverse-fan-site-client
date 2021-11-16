@@ -77,8 +77,10 @@ class WandCores extends Component {
     fetch(`${APIURL}/wand-core/`)
       .then((res) => res.json())
       .then((jsonData) => {
-        console.log(jsonData);
         this.setState({ wandCoreData: jsonData });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -99,6 +101,9 @@ class WandCores extends Component {
             comments: jsonData.comments,
           });
         }
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -121,6 +126,9 @@ class WandCores extends Component {
       .then((json) => {
         this.toggleCreate();
         this.setState({ comment: "" });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
     this.makeItWork();
   };
@@ -262,7 +270,6 @@ class WandCores extends Component {
                             fontSize: "25px",
                             color: "white",
                             marginTop: "20px",
-                            // marginBottom: "-23px",
                           }}
                           onClick={this.toggleCreate}
                         >
@@ -306,13 +313,6 @@ class WandCores extends Component {
                                         localStorage.getItem("userId") ? (
                                         <AiOutlineClose
                                           className="close-icon"
-                                          // style={{
-                                          //   color: "#7400B8",
-                                          //   fontWeight: "bold",
-                                          //   fontSize: "10px",
-                                          //   marginLeft: "10px",
-                                          //   textAlign: "center",
-                                          // }}
                                           onClick={() =>
                                             this.commentDelete(comment.id)
                                           }
@@ -479,7 +479,6 @@ class WandCores extends Component {
                             fontSize: "25px",
                             color: "white",
                             marginTop: "20px",
-                            // marginBottom: "-23px",
                           }}
                           onClick={() => {
                             this.setState({ wandCoreId: wandCore.id });
@@ -522,13 +521,6 @@ class WandCores extends Component {
                                             localStorage.getItem("userId") ? (
                                             <AiOutlineClose
                                               className="close-icon"
-                                              // style={{
-                                              //   color: "#7400B8",
-                                              //   fontWeight: "bold",
-                                              //   fontSize: "10px",
-                                              //   marginLeft: "10px",
-                                              //   textAlign: "center",
-                                              // }}
                                               onClick={() =>
                                                 this.commentDelete(comment.id)
                                               }

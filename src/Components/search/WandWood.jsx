@@ -77,8 +77,10 @@ class WandWoods extends Component {
     fetch(`${APIURL}/wand-wood/`)
       .then((res) => res.json())
       .then((jsonData) => {
-        console.log(jsonData);
         this.setState({ wandWoodData: jsonData });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -91,7 +93,6 @@ class WandWoods extends Component {
     fetch(`${APIURL}/wand-wood/${this.state.searchTerm}`)
       .then((resp) => resp.json())
       .then((jsonData) => {
-        console.log(jsonData);
         if (jsonData) {
           this.setState({
             searchResults: [jsonData],
@@ -99,6 +100,9 @@ class WandWoods extends Component {
             comments: jsonData.comments,
           });
         }
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -121,6 +125,9 @@ class WandWoods extends Component {
       .then((json) => {
         this.toggleCreate();
         this.setState({ comment: "" });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
     this.makeItWork();
   };
@@ -295,13 +302,6 @@ class WandWoods extends Component {
                                         localStorage.getItem("userId") ? (
                                         <AiOutlineClose
                                           className="close-icon"
-                                          // style={{
-                                          //   color: "#7400B8",
-                                          //   fontWeight: "bold",
-                                          //   fontSize: "10px",
-                                          //   marginLeft: "10px",
-                                          //   textAlign: "center",
-                                          // }}
                                           onClick={() =>
                                             this.commentDelete(comment.id)
                                           }
@@ -507,13 +507,6 @@ class WandWoods extends Component {
                                             localStorage.getItem("userId") ? (
                                             <AiOutlineClose
                                               className="close-icon"
-                                              // style={{
-                                              //   color: "#7400B8",
-                                              //   fontWeight: "bold",
-                                              //   fontSize: "12px",
-                                              //   marginLeft: "10px",
-                                              //   textAlign: "center",
-                                              // }}
                                               onClick={() =>
                                                 this.commentDelete(comment.id)
                                               }

@@ -76,6 +76,9 @@ class PotionIngredients extends Component {
       .then((jsonData) => {
         console.log(jsonData);
         this.setState({ potionIngredientData: jsonData });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -96,6 +99,9 @@ class PotionIngredients extends Component {
             comments: jsonData.comments,
           });
         }
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -118,6 +124,9 @@ class PotionIngredients extends Component {
       .then((json) => {
         this.toggleCreate();
         this.setState({ comment: "" });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
     this.makeItWork();
   };
@@ -355,13 +364,6 @@ class PotionIngredients extends Component {
                                         localStorage.getItem("userId") ? (
                                         <AiOutlineClose
                                           className="close-icon"
-                                          // style={{
-                                          //   color: "#7400B8",
-                                          //   fontWeight: "bold",
-                                          //   fontSize: "10px",
-                                          //   marginLeft: "10px",
-                                          //   textAlign: "center",
-                                          // }}
                                           onClick={() =>
                                             this.commentDelete(comment.id)
                                           }
@@ -388,17 +390,6 @@ class PotionIngredients extends Component {
         )}
         <Modal centered isOpen={this.state.createModal}>
           <ModalHeader toggle={this.toggleCreate}>
-            {/* <img
-              src={Cauldron}
-              style={{
-                height: "80px",
-                marginBottom: "500px",
-                marginTop: "-55px",
-                position: "absolute",
-                marginLeft: "-60px",
-                transform: "rotate(-45deg)",
-              }}
-            /> */}
             <h1
               style={{
                 fontFamily: "HarryP",

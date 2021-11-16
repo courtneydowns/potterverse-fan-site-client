@@ -76,8 +76,10 @@ class Characters extends Component {
     fetch(`${APIURL}/characters/`)
       .then((res) => res.json())
       .then((jsonData) => {
-        console.log(jsonData);
         this.setState({ characterData: jsonData });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -90,7 +92,6 @@ class Characters extends Component {
     fetch(`${APIURL}/characters/${this.state.searchTerm}`)
       .then((resp) => resp.json())
       .then((jsonData) => {
-        console.log(jsonData);
         if (jsonData) {
           this.setState({
             searchResults: [jsonData],
@@ -98,6 +99,9 @@ class Characters extends Component {
             comments: jsonData.comments,
           });
         }
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -120,6 +124,9 @@ class Characters extends Component {
       .then((json) => {
         this.toggleCreate();
         this.setState({ comment: "" });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
     this.makeItWork();
   };
@@ -379,17 +386,6 @@ class Characters extends Component {
         )}
         <Modal centered isOpen={this.state.createModal}>
           <ModalHeader toggle={this.toggleCreate}>
-            {/* <img
-              src={LunaGlasses}
-              style={{
-                height: "80px",
-                marginBottom: "500px",
-                marginTop: "-53px",
-                position: "absolute",
-                marginLeft: "-45px",
-                transform: "rotate(-45deg)",
-              }}
-            /> */}
             <h1
               style={{
                 fontFamily: "HarryP",
@@ -621,13 +617,6 @@ class Characters extends Component {
                                             localStorage.getItem("userId") ? (
                                             <AiOutlineClose
                                               className="close-icon"
-                                              // style={{
-                                              //   color: "#7400B8",
-                                              //   fontWeight: "bold",
-                                              //   fontSize: "12px",
-                                              //   marginLeft: "10px",
-                                              //   textAlign: "center",
-                                              // }}
                                               onClick={() =>
                                                 this.commentDelete(comment.id)
                                               }

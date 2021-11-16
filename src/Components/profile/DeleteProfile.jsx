@@ -36,12 +36,14 @@ class DeleteProfile extends Component {
       headers: new Headers({
         "Content-Type": "application/json",
         Authorization: this.props.token,
-        // Authorization: localStorage.getItem("token"),
       }),
     })
       .then((response) => response.json())
       .then(() => {
         this.setState({ modal: false });
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
@@ -76,7 +78,7 @@ class DeleteProfile extends Component {
             style={{
               fontFamily: "Lumos",
               fontSize: "22px",
-              color: "red",
+              color: "#f43b86",
               marginTop: "20px",
             }}
           >
