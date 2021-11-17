@@ -198,6 +198,7 @@ class EditProfile extends Component {
             <FormGroup>
               <Input
                 placeholder="Favorite Harry Potter Character"
+                value={this.state.favoriteHarryPotterCharacter}
                 type="text"
                 name="label"
                 style={{
