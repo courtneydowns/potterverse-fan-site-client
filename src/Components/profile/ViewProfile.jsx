@@ -26,6 +26,9 @@ class ViewProfile extends Component {
       .then((jsonData) => {
         console.log(jsonData);
         this.setState({ profileData: jsonData });
+      })
+            .catch((error) => {
+        console.log("Error", error);
       });
   };
 

@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import {
   Button,
-  Form,
   FormGroup,
   Input,
-  Label,
   Modal,
   ModalBody,
   ModalHeader,
@@ -50,7 +48,6 @@ class EditProfile extends Component {
       }),
       headers: new Headers({
         "Content-Type": "application/json",
-        // Authorization: localStorage.getItem("token"),
         Authorization: this.props.token,
       }),
     })
@@ -63,6 +60,10 @@ class EditProfile extends Component {
         console.log("Error", error);
       });
   };
+
+  componentDidMount() {
+    this.setState({ ...this.props.profileData})
+  }
 
   render() {
     return (
@@ -89,6 +90,7 @@ class EditProfile extends Component {
                 marginLeft: "-60px",
                 transform: "rotate(-45deg)",
               }}
+              alt="SortingHat"
             />
             <h1
               style={{
