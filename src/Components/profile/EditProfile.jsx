@@ -37,7 +37,7 @@ class EditProfile extends Component {
   }
 
   handleEditProfile = () => {
-    fetch(`${APIURL}}/profile/edit`, {
+    fetch(`${APIURL}/profile/edit`, {
       method: "PUT",
       body: JSON.stringify({
         profile: {
