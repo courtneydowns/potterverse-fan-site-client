@@ -25,7 +25,7 @@ class EditProfile extends Component {
       modal: false,
     };
     
-    console.log(props)
+    console.log(this.props)
     console.log(this.props.profileData)
 
     this.toggle = this.toggle.bind(this);
