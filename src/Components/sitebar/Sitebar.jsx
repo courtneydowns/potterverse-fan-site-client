@@ -27,7 +27,6 @@ class Sitebar extends Component {
   };
 
   toggleNavbar = () => {
-    console.log(this.state.profileImage);
     this.setState({ collapsed: !this.state.collapsed });
     this.setState({ profileImage: localStorage.getItem("profileImage") });
   };

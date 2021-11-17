@@ -21,9 +21,12 @@ class EditProfile extends Component {
       house: this.props.profileData.house,
       favoriteHarryPotterBook: this.props.profileData.favoriteHarryPotterBook,
       favoriteHarryPotterMovie: this.props.profileData.favoriteHarryPotterMovie,
-      favoriteHarryPotterCharacter: this.props.profileData.favoriteHarryPotterCharacter,
+      favoriteHarryPotterCharacter:this.props.profileData.favoriteHarryPotterCharacter,
       modal: false,
     };
+    
+    console.log(props)
+    console.log(this.props.profileData)
 
     this.toggle = this.toggle.bind(this);
   }
