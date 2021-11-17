@@ -61,8 +61,10 @@ class EditProfile extends Component {
       });
   };
 
-  componentDidMount() {
-    this.setState({ ...this.props.profileData})
+  componentDidUpdate(prevprops, prevstate) {
+    if (prevprops.profileData !== this.props.profileData) {
+      this.setState({ ...this.props.profileData})
+    }
   }
 
   render() {
