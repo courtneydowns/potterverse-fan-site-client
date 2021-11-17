@@ -13,7 +13,9 @@ class ViewProfile extends Component {
     this.state = {
       profileData: {},
     };
+    console.log(this.state.profileData)
   }
+
 
   getProfile = () => {
     fetch(`${APIURL}/profile/`, {
@@ -79,34 +81,34 @@ class ViewProfile extends Component {
   };
 
   render() {
-    const {
-      bio,
-      house,
-      favoriteHarryPotterBook,
-      favoriteHarryPotterMovie,
-      favoriteHarryPotterCharacter,
-    } = this.state.profileData;
+    // const {
+    //   bio,
+    //   house,
+    //   favoriteHarryPotterBook,
+    //   favoriteHarryPotterMovie,
+    //   favoriteHarryPotterCharacter,
+    // } = this.state.profileData;
     return (
       <div>
         <h1
           className="profile-bio-header"
           style={{ color: "white", fontFamily: "Lumos", marginTop: "50px" }}
         >
-          <strong>{bio}</strong>
+          <strong>{this.state.profileData.bio}</strong>
         </h1>
         <h2 style={{ color: "white", fontFamily: "Lumos", marginTop: "10px" }}>
           {this.house()}
-          <strong>{house}</strong>
+          <strong>{this.state.profileData.house}</strong>
           {this.house()}
         </h2>
         <h4 style={{ color: "white", fontFamily: "Lumos", marginTop: "10px" }}>
-          <strong>Favorite Book:</strong> {favoriteHarryPotterBook}
+          <strong>Favorite Book:</strong> {this.state.profileData.favoriteHarryPotterBook}
         </h4>
         <h4 style={{ color: "white", fontFamily: "Lumos", marginTop: "10px" }}>
-          <strong>Favorite Movie:</strong> {favoriteHarryPotterMovie}
+          <strong>Favorite Movie:</strong> {this.state.profileData.favoriteHarryPotterMovie}
         </h4>
         <h4 style={{ color: "white", fontFamily: "Lumos", marginTop: "10px" }}>
-          <strong>Favorite Character:</strong> {favoriteHarryPotterCharacter}
+          <strong>Favorite Character:</strong> {this.state.profileData.favoriteHarryPotterCharacter}
         </h4>
         <div
           style={{
@@ -124,8 +126,7 @@ class ViewProfile extends Component {
             token={this.props.token}
             profileData={this.state.profileData}
           />
-        </div>
-        <br></br>
+                  <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -144,6 +145,7 @@ class ViewProfile extends Component {
         <br></br>
         <br></br>
       </div>
+        </div>
     );
   }
 }
