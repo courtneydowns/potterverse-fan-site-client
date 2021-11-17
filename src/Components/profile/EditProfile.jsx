@@ -206,7 +206,6 @@ class EditProfile extends Component {
                   color: "#575C66",
                   border: "#7400B8 solid 2px",
                 }}
-                value={this.state.favoriteHarryPotterCharacter}
                 onChange={(e) =>
                   this.setState({
                     favoriteHarryPotterCharacter: e.target.value,
