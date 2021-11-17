@@ -25,9 +25,8 @@ class EditProfile extends Component {
       modal: false,
     };
     
-    console.log(this.props)
-    console.log(this.props.profileData)
-
+    console.log(this.props);
+    console.log(this.props.profileData);
     this.toggle = this.toggle.bind(this);
   }
 
@@ -38,7 +37,7 @@ class EditProfile extends Component {
   }
 
   handleEditProfile = () => {
-    fetch(`${APIURL}/profile/edit`, {
+    fetch(`${APIURL}}/profile/edit`, {
       method: "PUT",
       body: JSON.stringify({
         profile: {
@@ -51,6 +50,7 @@ class EditProfile extends Component {
       }),
       headers: new Headers({
         "Content-Type": "application/json",
+        // Authorization: localStorage.getItem("token"),
         Authorization: this.props.token,
       }),
     })
@@ -200,7 +200,6 @@ class EditProfile extends Component {
             <FormGroup>
               <Input
                 placeholder="Favorite Harry Potter Character"
-                value={this.state.favoriteHarryPotterCharacter}
                 type="text"
                 name="label"
                 style={{
@@ -209,6 +208,7 @@ class EditProfile extends Component {
                   color: "#575C66",
                   border: "#7400B8 solid 2px",
                 }}
+                value={this.state.favoriteHarryPotterCharacter}
                 onChange={(e) =>
                   this.setState({
                     favoriteHarryPotterCharacter: e.target.value,
