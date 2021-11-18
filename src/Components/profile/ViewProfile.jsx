@@ -128,7 +128,7 @@ class ViewProfile extends Component {
             token={this.props.token}
             profileData={this.state.profileData}
           />
-          {this.getProfile()}
+          {/* {this.getProfile()} */}
         </div>
         <br></br>
         <br></br>
