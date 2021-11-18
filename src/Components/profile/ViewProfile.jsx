@@ -27,7 +27,7 @@ class ViewProfile extends Component {
         console.log(jsonData);
         this.setState({ profileData: jsonData });
       })
-            .catch((error) => {
+      .catch((error) => {
         console.log("Error", error);
       });
   };
@@ -128,6 +128,7 @@ class ViewProfile extends Component {
             token={this.props.token}
             profileData={this.state.profileData}
           />
+          {this.getProfile()}
         </div>
         <br></br>
         <br></br>

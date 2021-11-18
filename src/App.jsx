@@ -49,7 +49,7 @@ class App extends Component {
       <div className="App">
         <div class="stars">
           <div class="twinkling">
-            {!!this.state.sessionToken && (
+            {!this.state.sessionToken && (
               <Sitebar clickLogout={this.clearToken} />
             )}
             <Switch>
