@@ -148,6 +148,11 @@ class ViewProfile extends Component {
         <br></br>
         <br></br>
         <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
     );
   }
