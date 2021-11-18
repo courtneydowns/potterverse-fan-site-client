@@ -19,10 +19,11 @@ class EditProfile extends Component {
       house: this.props.profileData.house,
       favoriteHarryPotterBook: this.props.profileData.favoriteHarryPotterBook,
       favoriteHarryPotterMovie: this.props.profileData.favoriteHarryPotterMovie,
-      favoriteHarryPotterCharacter:this.props.profileData.favoriteHarryPotterCharacter,
+      favoriteHarryPotterCharacter:
+        this.props.profileData.favoriteHarryPotterCharacter,
       modal: false,
     };
-    
+
     console.log(this.props);
     console.log(this.props.profileData);
     this.toggle = this.toggle.bind(this);
@@ -55,6 +56,7 @@ class EditProfile extends Component {
       .then((data) => {
         this.setState({ modal: false });
         this.props.setProfileData(data.profile);
+        this.props.getProfile();
       })
       .catch((error) => {
         console.log("Error", error);
@@ -63,7 +65,7 @@ class EditProfile extends Component {
 
   componentDidUpdate(prevprops, prevstate) {
     if (prevprops.profileData !== this.props.profileData) {
-      this.setState({ ...this.props.profileData})
+      this.setState({ ...this.props.profileData });
     }
   }
 

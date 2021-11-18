@@ -123,12 +123,12 @@ class ViewProfile extends Component {
             profileData={this.state.profileData}
             setProfileData={this.setProfileData}
             token={this.props.token}
+            getProfile={this.getProfile()}
           />
           <DeleteProfile
             token={this.props.token}
             profileData={this.state.profileData}
           />
-          {/* {this.getProfile()} */}
         </div>
         <br></br>
         <br></br>
